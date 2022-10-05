@@ -30,14 +30,32 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void leggtil(View v) {
+        Kontakt kontakt = new Kontakt(navninn.getText().toString(),
+                telefoninn.getText().toString());
+        dbHelper.leggTilKontakt(db, kontakt);
     }
 
     public void visalle(View v) {
+        String tekst = "";
+        List<Kontakt> kontakter = dbHelper.finnAlleKontakter(db);
+        for (Kontakt kontakt : kontakter) {
+            tekst = tekst + "Id: " + kontakt.get_ID() + ",Navn: " +
+                    kontakt.getNavn() + " ,Telefon: " +
+                    kontakt.getTlf() + "\n";
+        }
+        utskrift.setText(tekst);
     }
 
     public void slett(View v) {
+        Long kontaktid = (Long.parseLong(idinn.getText().toString()));
+        dbHelper.slettKontakt(db,kontaktid);
     }
 
     public void oppdater(View v) {
+        Kontakt kontakt = new Kontakt();
+        kontakt.setNavn(navninn.getText().toString());
+        kontakt.setTlf(telefoninn.getText().toString());
+        kontakt.set_ID(Long.parseLong(idinn.getText().toString()));
+        dbHelper.oppdaterKontakt(db, kontakt);
     }
 }
