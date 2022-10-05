@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">mappe2Avtaler</string>
+    <string name="app_name">Avtaler</string>
+    <string name="navn">Skriv inn Navn</string>
+    <string name="tlf">Skriv inn Telefonnummer</string>
+    <string name="id">Skriv inn Id</string>
+    <string name="reg">Legg til</string>
+    <string name="slett">Slett</string>
+    <string name="vis">Vis Alle</string>
+    <string name="oppd">Oppdater</string>
 </resources>
