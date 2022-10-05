@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/navn"
+        android:text="@string/navntxt"
         android:textAlignment="center" />
 
     <EditText
@@ -20,7 +20,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/tlf"
+        android:text="@string/tlftxt"
         android:textAlignment="center"/>
     <EditText
         android:id="@+id/tlf"
@@ -29,14 +29,39 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/id"/>
+        android:text="@string/idtxt"
+        android:textAlignment="center"/>
     <EditText
         android:id="@+id/min_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-    <TextView
-        android:id="@+id/utskrift"
+    <Button
+        android:id="@+id/leggtil"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:onClick="leggtil"
+        android:text="@string/reg"/>
+    <Button
+        android:id="@+id/slett"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="slett"
+        android:text="@string/slett" />
+    <Button
+        android:id="@+id/visalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="visalle"
+        android:text="@string/vis" />
+    <Button
+        android:id="@+id/oppdater"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="oppdater"
+        android:text="@string/oppd" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/utskrift" />
 
 </LinearLayout>

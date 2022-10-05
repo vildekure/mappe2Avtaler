@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Avtaler</string>
-    <string name="navn">Skriv inn Navn</string>
-    <string name="tlf">Skriv inn Telefonnummer</string>
-    <string name="id">Skriv inn Id</string>
+    <string name="navntxt">Skriv inn Navn</string>
+    <string name="tlftxt">Skriv inn Telefonnummer</string>
+    <string name="idtxt">Skriv inn Id</string>
     <string name="reg">Legg til</string>
     <string name="slett">Slett</string>
     <string name="vis">Vis Alle</string>
